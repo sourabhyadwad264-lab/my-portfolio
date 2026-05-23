@@ -1,0 +1,42 @@
+.about {
+  padding: 80px 10%;
+  background-color: #f8fafc;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 900px;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  color: #334155;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 7%;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-text p {
+    font-size: 17px;
+  }
+}
