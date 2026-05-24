@@ -1,68 +1,117 @@
 .projects {
-  padding: 80px 10%;
-  background-color: #0f172a;
+  position: relative;
 }
 
-.projects-title {
-  text-align: center;
-  font-size: 42px;
-  margin-bottom: 60px;
-  color: coral;
-}
-.projects-title:hover{
-  color:darkturquoise;
-}
+/* Grid */
 
-.projects-container {
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 40px;
 }
+
+/* Card */
 
 .project-card {
-  background-color: #1e293b;
-  padding: 30px;
-  border-radius: 14px;
-  transition: 0.3s;
+  padding: 35px;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: 0.5s ease;
+
+  transform-style: preserve-3d;
 }
+
+/* Hover */
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform:
+    translateY(-15px)
+    rotateY(6deg)
+    rotateX(6deg);
+
+  box-shadow:
+    0 0 30px rgba(0,245,255,0.3),
+    0 0 60px rgba(124,58,237,0.2);
 }
 
+/* Glow */
+
+.project-glow {
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  background: rgba(0,245,255,0.15);
+
+  border-radius: 50%;
+
+  top: -100px;
+  right: -100px;
+
+  filter: blur(80px);
+}
+
+/* Text */
+
 .project-card h3 {
-  color: #38bdf8;
-  margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 1.8rem;
+
+  margin-bottom: 20px;
+
+  color: #00f5ff;
 }
 
 .project-card p {
   color: #cbd5e1;
-  line-height: 1.7;
-  margin-bottom: 20px;
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
 }
 
-.project-card span {
-  display: block;
-  margin-bottom: 20px;
-  color: #94a3b8;
+/* Tech Stack */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 35px;
 }
 
-.project-card a {
-  text-decoration: none;
-  background-color: #38bdf8;
-  color: black;
+.project-tech span {
   padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: bold;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  color: #00f5ff;
+
+  font-size: 0.9rem;
 }
 
-.project-card a:hover {
-  background-color: white;
+/* Buttons */
+
+.project-buttons {
+  display: flex;
+  gap: 20px;
 }
+
+/* Responsive */
 
 @media (max-width: 768px) {
-  .projects-title {
-    font-size: 32px;
+
+  .project-buttons {
+    flex-direction: column;
   }
+
 }

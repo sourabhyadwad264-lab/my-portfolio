@@ -1,72 +1,94 @@
 import "./Contact.css";
+import { motion } from "framer-motion";
 
-function Contact() {
+const Contact = () => {
   return (
     <section className="contact" id="contact">
 
-      <h2 className="contact-title">Contact Me</h2>
+      <div className="container">
 
-      <div className="contact-container">
+        <h2 className="section-title">
+          Contact Me
+        </h2>
 
-        <div className="contact-info">
+        <div className="contact-content">
 
-          <p>
-            📧 Email:
-            <a href="mailto:sourabh@example.com">
-              sourabhyadwad264@gmail.com
-            </a>
-          </p>
+          {/* Left Side */}
 
-          <p>
-            💻 GitHub:
-            <a
-              href="https://github.com/sourabhyadwad264-lab"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://github.com/sourabhyadwad264-lab
-            </a>
-          </p>
+          <motion.div
+            className="contact-info glass-card"
 
-          <p>
-            🔗 LinkedIn:
-            <a
-              href="https://linkedin.com/in/yourprofile"
-              target="_blank"
-              rel="noreferrer"
-            >
-              linkedin.com/in/sourabh-yadwad-93907b3b4
-            </a>
-          </p>
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+
+            transition={{ duration: 1 }}
+
+            viewport={{ once: true }}
+          >
+
+            <div className="contact-glow"></div>
+
+            <h3>
+              Let's Build Something Amazing
+            </h3>
+
+            <p>
+              I'm always interested in
+              frontend development,
+              innovative projects,
+              and modern web experiences.
+            </p>
+
+            <div className="contact-details">
+
+              <p>Email: sourabh@example.com</p>
+
+              <p>Location: India</p>
+
+            </div>
+
+          </motion.div>
+
+          {/* Right Side Form */}
+
+          <motion.form
+            className="contact-form glass-card"
+
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+
+            transition={{ duration: 1 }}
+
+            viewport={{ once: true }}
+          >
+
+            <input
+              type="text"
+              placeholder="Your Name"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+            />
+
+            <textarea
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+
+            <button className="btn btn-primary">
+              Send Message
+            </button>
+
+          </motion.form>
 
         </div>
 
-        <form className="contact-form">
-
-          <input
-            type="text"
-            placeholder="Enter Your Name"
-          />
-
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-          />
-
-          <textarea
-            rows="6"
-            placeholder="Enter Your Message"
-          ></textarea>
-
-          <button type="submit">
-            Send Message
-          </button>
-
-        </form>
-
       </div>
+
     </section>
   );
-}
+};
 
 export default Contact;

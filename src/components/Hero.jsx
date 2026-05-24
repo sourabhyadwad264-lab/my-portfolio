@@ -1,24 +1,103 @@
 import "./Hero.css";
-
-function Hero() {
+import { motion } from "framer-motion";
+const Hero = () => {
   return (
     <section className="hero" id="home">
-      <div className="hero-content">
-        <h1>Hello, I'm Sourabh 👋</h1>
+      {/* Background Glow Effects */}
 
-        <h2>Frontend React Developer</h2>
+      <div className="bg-glow glow-1"></div>
+      <div className="bg-glow glow-2"></div>
+
+      <div className="particles">
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+</div>
+
+
+      <div className="hero-content">
+
+        {/* Left Content */}
+
+        <motion.div
+          className="hero-text"
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+
+          <p className="hero-subtitle">
+            FRONTEND • REACT • UI ENGINEER
+          </p>
+
+          <h1>
+            Hi, I'm <span>Sourabh</span>
+          </h1>
+
+          <h2>
+            Building Next-Generation
+            Digital Experiences
+          </h2>
+
+          <p className="hero-description">
+            Passionate software developer focused on
+            modern frontend engineering, futuristic UI,
+            performance optimization, and creating
+            premium interactive web experiences.
+          </p>
+
+          {/* Buttons */}
+
+          <div className="hero-buttons">
+
+            <a href="#projects" className="btn btn-primary">
+              View Projects
+            </a>
+
+            <a href="#contact" className="btn btn-outline">
+              Contact Me
+            </a>
+
+          </div>
+
+      </motion.div>
+
+      {/* Right Side Card */}
+
+      <motion.div
+  className="hero-card glass-card"
+  initial={{ opacity: 0, x: 100 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1.2 }}
+>
+        <div className="card-glow"></div>
+
+        <h3>Developer Vision</h3>
 
         <p>
-          Passionate about building responsive and modern web
-          applications using React and JavaScript.
+          Transforming ideas into futuristic,
+          scalable, and high-performance
+          digital experiences.
         </p>
+        <div className="tech-stack">
 
-        <a href="#projects" className="hero-btn">
-          View Projects
-        </a>
-      </div>
-    </section>
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>UI/UX</span>
+          <span>Frontend</span>
+          <span>Performance</span>
+
+        </div>
+      </motion.div>
+    </div>
+      
+
+    </section >
   );
-}
+};
 
 export default Hero;
