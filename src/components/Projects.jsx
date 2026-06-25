@@ -6,14 +6,27 @@ const projectData = [
     title: "Next-Gen Portfolio",
     description:
       "Modern futuristic portfolio with cinematic UI, animations, glassmorphism, and premium frontend interactions.",
-    tech: ["React", "CSS", "Framer Motion"],
+    tech: ["React", "CSS", "Performance Optimization", "github", "Vercel"],
+    demoLink: "https://your-portfolio-demo.com",
+    githubLink: "https://github.com/sourabhyadwad264-lab",
   },
 
   {
     title: "Shopping Cart App",
     description:
       "Advanced shopping cart application using Context API and useReducer with dynamic UI interactions.",
-    tech: ["React", "Context API", "Reducer"],
+    tech: ["React", "CSS3", "Context API", "Reducer", "Github", "Vercel"],
+    demoLink: "https://my-shopcart-app-chsn.vercel.app/",
+    githubLink: "https://github.com/sourabhyadwad264-lab",
+  },
+
+  {
+    title: "Multidomain Inventory Control App",
+    description:
+      "Built strictly using a modern frontend architecture (**HTML5, BS5,& Vanilla JS**),it manages physical assets without requiring heavy server-side overhead.",
+    tech: ["HTML5", "Bootstrap5", "JS", "Github", "Netlify"],
+    demoLink: "https://inventorymanagementcontrol.netlify.app/",
+    githubLink: "https://github.com/sourabhyadwad264-lab"
   },
 
   {
@@ -21,7 +34,9 @@ const projectData = [
     description:
       "Dynamic dark/light theme system built using React Context API with smooth transitions.",
     tech: ["React", "Context API"],
-  },
+    demoLink: "https://mytheme-toggle-system-app.vercel.app/",
+    githubLink: "https://github.com/sourabhyadwad264-lab",
+  }
 ];
 
 const Projects = () => {
@@ -70,17 +85,28 @@ const Projects = () => {
               {/* Buttons */}
 
               <div className="project-buttons">
+                {project.demoLink && (
+                  <a
+                    href={project.demoLink}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                )}
 
-                <a href="#" className="btn btn-primary">
-                  Live Demo
-                </a>
-
-                <a href="#" className="btn btn-outline">
-                  GitHub
-                </a>
-
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    className="btn btn-outline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                )}
               </div>
-
             </motion.div>
 
           ))}

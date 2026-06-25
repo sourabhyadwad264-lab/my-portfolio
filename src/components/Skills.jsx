@@ -3,22 +3,25 @@ import { motion } from "framer-motion";
 
 const skillsData = [
   {
-    title: "Frontend",
+    title: "Frontend,Backend,Databases & Frameworks",
     skills: [
-      { name: "HTML", level: "95%" },
-      { name: "CSS", level: "90%" },
-      { name: "JavaScript", level: "85%" },
-      { name: "React", level: "88%" },
+      { name: "HTML", level: "85%" },
+      { name: "CSS", level: "85%" },
+      { name: "JavaScript", level: "75%" },
+      { name: "React", level: "80%" },
+      { name: "MySQL", level: "65%" },
+
     ],
   },
 
   {
-    title: "Tools & Concepts",
+    title: "Tools,Editors & AI Technologies ",
     skills: [
-      { name: "Git & GitHub", level: "85%" },
-      { name: "Context API", level: "82%" },
-      { name: "Responsive Design", level: "90%" },
-      { name: "UI/UX", level: "80%" },
+      { name: "Git & GitHub", level: "80%" },
+      { name: "Vercel & Netlify", level: "70%" },
+      { name: "Responsive Design", level: "80%" },
+      { name: "Generative AI | Chatgpt", level: "70%" },
+      { name: "VS Code", level: "90%" }
     ],
   },
 ];
@@ -42,14 +45,16 @@ const Skills = () => {
 
               key={index}
 
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
 
-              transition={{ duration: 0.8 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut"
+              }}
 
               viewport={{ once: true }}
             >
-
               <div className="skill-glow"></div>
 
               <h3>{category.title}</h3>

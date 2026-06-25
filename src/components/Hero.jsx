@@ -10,13 +10,13 @@ const Hero = () => {
 
       <div className="particles">
 
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-</div>
+      </div>
 
 
       <div className="hero-content">
@@ -64,37 +64,38 @@ const Hero = () => {
 
           </div>
 
-      </motion.div>
+        </motion.div>
 
-      {/* Right Side Card */}
+        {/* Right Side Card */}
 
-      <motion.div
-  className="hero-card glass-card"
-  initial={{ opacity: 0, x: 100 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 1.2 }}
->
-        <div className="card-glow"></div>
+        <motion.div
+          className="hero-card glass-card"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.2 }}
+        >
+          <div className="card-glow"></div>
 
-        <h3>Developer Vision</h3>
+          <h3>Developer Vision</h3>
 
-        <p>
-          Transforming ideas into futuristic,
-          scalable, and high-performance
-          digital experiences.
-        </p>
-        <div className="tech-stack">
+          <p>
+            Transforming ideas into futuristic,
+            scalable, and high-performance
+            digital experiences.
+          </p>
+          <div className="tech-stack">
+            <span>HTML5 & CSS3</span>
+            <span>JavaScript(ES6+)</span>
+            <span>React.js</span>
 
-          <span>React</span>
-          <span>JavaScript</span>
-          <span>UI/UX</span>
-          <span>Frontend</span>
-          <span>Performance</span>
+            <span>UI/UX Principles</span>
+            
+            <span>Performance Optimization</span>
 
-        </div>
-      </motion.div>
-    </div>
-      
+          </div>
+        </motion.div>
+      </div>
+
 
     </section >
   );

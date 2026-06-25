@@ -41,9 +41,9 @@ const Contact = () => {
 
             <div className="contact-details">
 
-              <p>Email: sourabh@example.com</p>
+              <p>Email: sourabhyadwad264@gmail.com</p>
 
-              <p>Location: India</p>
+              <p>Location:Pune,India</p>
 
             </div>
 
@@ -61,8 +61,8 @@ const Contact = () => {
 
             viewport={{ once: true }}
           >
-
-            <input
+            <h3>🚀 Note:Contact message box that holds name, email , description box & last send messsage button option will be coming soon....</h3>
+            {/* <input
               type="text"
               placeholder="Your Name"
             />
@@ -79,7 +79,7 @@ const Contact = () => {
 
             <button className="btn btn-primary">
               Send Message
-            </button>
+            </button> */}
 
           </motion.form>
 

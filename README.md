@@ -1,10 +1,11 @@
- Sourabh Portfolio Website
+# Portfolio: 
+Sourabh Portfolio Website
 
-Overview =>
+# Overview =>
 
 This is a personal portfolio website developed to showcase my skills, projects, learning journey, and professional profile as a software developer. The project was built with a focus on modern frontend development, responsive UI design, and deployment practices.
 
-Project Goals =>
+# Project Goals =>
 - Build a modern responsive portfolio website
 
 - Practice real-world frontend development
@@ -29,39 +30,6 @@ HTML5, CSS3, JavaScript, React.js, Vite, Git & GitHub, Vercel Deployment.
 -Professional portfolio layout
 -Responsive design structure
 
-Theme Features
-
-Light and Dark theme toggle using Context API
-
-Theme switching functionality implemented
-
-Theme icons added
-
-Shopping Cart Context Practice
-
-Context API implementation
-
-useReducer implementation
-
-State management practice
-
-Animated UI styling inspired by modern e-commerce design
-
-React Concepts Practiced
-
-Context API
-
-ThemeContext
-
-useState
-
-useReducer
-
-Error Boundaries
-
-Props handling
-
-Component-based architecture
 
 # GitHub Workflow
 The project was connected to GitHub for version control.
