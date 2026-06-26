@@ -31,7 +31,7 @@ const Hero = () => {
         >
 
           <p className="hero-subtitle">
-            FRONTEND • REACT • UI ENGINEER
+            Aspiring JFSD = FRONTEND • REACT • UI / UX 
           </p>
 
           <h1>
